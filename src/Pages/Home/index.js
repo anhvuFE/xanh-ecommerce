@@ -3,9 +3,11 @@ import banner1 from "../../assets/images/banner1.jpg";
 import banner2 from "../../assets/images/banner2.jpg";
 import banner3 from "../../assets/images/banner3.jpg";
 import banner4 from "../../assets/images/banner4.jpg";
+import newLetterImg from "../../assets/images/coupons.webp";
 
 import Button from "@mui/material/Button";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { IoMailOutline } from "react-icons/io5";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -125,6 +127,33 @@ const Home = () => {
                   <img src={banner4} className="cursor w-100" />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* LETTER */}
+      <section className="newsLetterSection mt-3 mb-3 d-flex align-items-center">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <p className="text-white mb-1">
+                Giảm ngay 20.000 cho đơn hàng đầu tiên
+              </p>
+              <h3 className="text-white">
+                Đăng ký nhận bản tin của chúng tôi để nhận...
+              </h3>
+              <p className="text-white">
+                Đăng ký email ngay để nhận thông tin <br />
+                khuyến mãi và mã giảm giá sớm nhất
+              </p>
+              <form>
+                <IoMailOutline />
+                <input type="text" placeholder="Nhập địa chỉ email của bạn" />
+                <Button>Đăng ký</Button>
+              </form>
+            </div>
+            <div className="col-md-6">
+              <img src={newLetterImg} alt="Đăng ký nhận bản tin" />
             </div>
           </div>
         </div>
