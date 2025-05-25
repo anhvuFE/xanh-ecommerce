@@ -1,0 +1,39 @@
+front end
+
+
+Home
+product listing
+product details
+cart
+sign in
+sign up
+my list
+orders
+search
+my account
+contact
+about us
+
+
+
+
+///setting
+code .
+npm install react-router-dom
+npm install react-icons --save
+npm install @mui/icons-material
+
+npm install react-slick --save
+npm i swiper
+
+
+
+
+//push
+echo "# xanh-ecommerce" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/anhvuFE/xanh-ecommerce.git
+git push -u origin main
