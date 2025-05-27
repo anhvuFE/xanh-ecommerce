@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
-import CountryDropdown from "./CountryDropdown";
+import CountryDropdown from "../CountryDropdown";
 import SearchBox from "./SearchBox";
 import Navigation from "./Navigation";
+import HomeBanner from "../HomeBanner";
 // import { Button } from "bootstrap";
 import Button from "@mui/material/Button";
 import { FiUser } from "react-icons/fi";

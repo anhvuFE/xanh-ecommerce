@@ -1,4 +1,4 @@
-import HomeBanner from "../../components/Header/HomeBanner";
+import HomeBanner from "../../components/HomeBanner";
 import banner1 from "../../assets/images/banner1.jpg";
 import banner2 from "../../assets/images/banner2.jpg";
 import banner3 from "../../assets/images/banner3.jpg";
@@ -17,7 +17,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css/pagination";
 import Rating from "@mui/material/Rating";
 
-import ProductItem from "../../components/Header/ProductItem";
+import ProductItem from "../../components/ProductItem";
 import HomeCat from "../../components/HomeCat";
 
 const Home = () => {
