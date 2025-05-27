@@ -2,11 +2,10 @@ import Button from "@mui/material/Button";
 import Rating from "@mui/material/Rating";
 import { TfiFullscreen } from "react-icons/tfi";
 import { IoMdHeartEmpty } from "react-icons/io";
-import ProductModal from "../ProductModal";
 import { useContext, useState } from "react";
 import { MyContext } from "../../App";
 
-const ProductItem = () => {
+const ProductItem = (props) => {
   const context = useContext(MyContext);
 
   const viewProductDetail = (id) => {
@@ -15,7 +14,7 @@ const ProductItem = () => {
 
   return (
     <>
-      <div className="item productItem">
+      <div className={`productItem ${props.itemView} `}>
         <div className="imgWrapper">
           <img
             src="https://owen.cdn.vccloud.vn/media/amasty/ampromobanners/_nh_danh_m_c_3_090525.jpg"
