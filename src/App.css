@@ -48,13 +48,27 @@ button {
   color: #fff !important;
   text-transform: capitalize !important;
 }
+.bg-red {
+  background: #ed174a !important;
+}
+.text-red {
+  color: #ed171a !important;
+}
+.text-blue {
+  color: #233a95 !important;
+}
+
 .btn-big {
   font-size: 15px !important ;
   padding: 7px 30px !important;
   min-width: auto !important;
+  font-weight: bold !important;
 }
 .btn-round {
   border-radius: 30px !important;
+}
+btn-blue svg {
+  font-size: 22px;
 }
 .btn-sml {
   font-size: 12px !important ;
@@ -1192,4 +1206,74 @@ footer .copyright ul li a:hover svg {
 }
 .reviewsCard .info p {
   font-size: 13px;
+}
+.cartPage .table thead {
+  background: #ececec !important;
+  overflow: hidden;
+}
+.cartPage .table thead th {
+  border: 0px !important;
+}
+.cartPage .table thead th:first-child {
+  border-top-left-radius: 10px !important ;
+  border-bottom-left-radius: 10px !important ;
+}
+.cartPage .table thead th:last-child {
+  border-top-right-radius: 10px !important ;
+  border-bottom-right-radius: 10px !important ;
+}
+a:hover {
+  text-decoration: none !important;
+}
+.cartItemImgWrapper {
+  width: 280px;
+}
+.cartItemImgWrapper .imgWrapper {
+  width: 100px;
+  overflow: hidden;
+}
+.cartItemImgWrapper .info a:hover {
+  text-decoration: none;
+}
+.cartItemImgWrapper .info h6 {
+  color: #343434;
+  font-weight: bold;
+}
+.cartItemImgWrapper .info h6:hover {
+  color: #ed174a !important;
+}
+.remove {
+  cursor: pointer;
+}
+.remove svg {
+  font-size: 30px;
+}
+.remove:hover svg {
+  color: #ed174a !important;
+}
+.cartPage .quantityDrop button {
+  zoom: 75%;
+}
+.cartPage table th,
+.cartPage table td {
+  vertical-align: middle;
+}
+.cartPage table th,
+.cartPage table td {
+  border-top: 0px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+.cartPage table tbody tr:hover {
+  background: #fafafa;
+}
+.cartDetails {
+  border-radius: 7px !important;
+  position: sticky !important;
+  top: 20px;
+}
+.cartDetails h4 {
+  font-size: 16px;
+  font-weight: 800 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 15px;
 }

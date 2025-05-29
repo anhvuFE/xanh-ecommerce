@@ -10,6 +10,7 @@ import { createContext, useEffect, useState } from "react";
 import axios from "axios";
 import Listing from "./Pages/Listing";
 import ProductDetails from "./Pages/ProductDetails";
+import Cart from "./Pages/Cart";
 
 const MyContext = createContext();
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Routes>
           <Route path="/" exact={true} element={<Home />} />
           <Route path="/cat/:id" exact={true} element={<Listing />} />
+          <Route path="/cart" exact={true} element={<Cart />} />
           <Route
             path="/product/:id"
             exact={true}
