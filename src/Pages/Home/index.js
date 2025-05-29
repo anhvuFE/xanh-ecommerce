@@ -13,10 +13,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
-
 import "swiper/css/pagination";
 import Rating from "@mui/material/Rating";
-
 import ProductItem from "../../components/ProductItem";
 import HomeCat from "../../components/HomeCat";
 
@@ -64,13 +62,12 @@ const Home = () => {
               </div>
 
               {/*  */}
-              <div className="product_row w-100 mt-4">
+              <div className="product_row w-100 mt-2">
                 <Swiper
                   slidesPerView={4}
                   spaceBetween={0}
-                  pagination={{
-                    clickable: true,
-                  }}
+                  navigation={true}
+                  slidesPerGroup={3}
                   modules={[Navigation]}
                   className="mySwiper"
                 >

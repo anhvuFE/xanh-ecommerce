@@ -9,6 +9,7 @@ import ProductModal from "./components/ProductModal";
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
 import Listing from "./Pages/Listing";
+import ProductDetails from "./Pages/ProductDetails";
 
 const MyContext = createContext();
 function App() {
@@ -39,6 +40,11 @@ function App() {
         <Routes>
           <Route path="/" exact={true} element={<Home />} />
           <Route path="/cat/:id" exact={true} element={<Listing />} />
+          <Route
+            path="/product/:id"
+            exact={true}
+            element={<ProductDetails />}
+          />
         </Routes>
         <Footer />
         {isOpenProductModal === true && <ProductModal />}
