@@ -180,7 +180,7 @@ const Footer = () => {
           <p className="mb-0">
             © {new Date().getFullYear()} by Xuan Anh Vu. All rights reserved.
           </p>
-          <ul className="list list-inline ml-auto mb-0">
+          <ul className="list list-inline ml-auto mb-0 socials">
             <li className="list-inline-item">
               <Link to="#">
                 <FaFacebookF />
