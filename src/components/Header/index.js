@@ -9,10 +9,14 @@ import Button from "@mui/material/Button";
 import { FiUser } from "react-icons/fi";
 import { IoBagOutline } from "react-icons/io5";
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+
 import { MyContext } from "../../App";
 
 const Header = () => {
   const context = useContext(MyContext);
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="headerWrapper">
@@ -37,15 +41,28 @@ const Header = () => {
                 {context.countryList.length !== 0 && <CountryDropdown />}
                 <SearchBox />
                 <div className="part3 d-flex align-items-center ml-auto">
-                  <Button className="circle mr-3">
-                    <FiUser />
-                  </Button>
+                  {context.isLogin !== true ? (
+                    <Link to="signIn">
+                      <Button className="btn-blue btn-round mr-3 ">
+                        Sign In
+                      </Button>
+                    </Link>
+                  ) : (
+                    <Button className="circle mr-3">
+                      <FiUser />
+                    </Button>
+                  )}
+
                   <div className="ml-auto cartTab d-flex align-items-center">
                     <span className="price">$3.29</span>
                     <div className="position-relative ml-2">
-                      <Button className="circle ml-2">
+                      <Button
+                        className="circle ml-2"
+                        onClick={() => navigate("/cart")}
+                      >
                         <IoBagOutline />
                       </Button>
+
                       <span className="count d-flex align-items-center justify-content-center">
                         1
                       </span>

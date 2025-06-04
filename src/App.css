@@ -47,6 +47,8 @@ button {
   background: #233a95 !important ;
   color: #fff !important;
   text-transform: capitalize !important;
+  font-weight: 500 !important;
+  padding: 5px 20px !important;
 }
 .bg-red {
   background: #ed174a !important;
@@ -60,7 +62,7 @@ button {
 
 .btn-big {
   font-size: 15px !important ;
-  padding: 7px 30px !important;
+  padding: 8px 30px !important;
   min-width: auto !important;
   font-weight: bold !important;
 }
@@ -157,13 +159,13 @@ btn-blue svg {
   opacity: 0.7;
 }
 .headerSearch {
-  width: 60%;
-  height: 60px;
+  width: 56%;
+  height: 50px;
   background: #f3f4f7;
   padding: 5px;
   position: relative;
   border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 .headerSearch input {
   background: transparent !important;
@@ -210,7 +212,7 @@ header .part3 .circle svg {
 
 /* CART  */
 .cartTab .price {
-  font-size: 18px;
+  font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 700;
 }
@@ -795,7 +797,7 @@ footer .linksWrap ul li a {
 footer .linksWrap ul li a:hover {
   text-decoration: none;
 }
-footer .copyright ul li a {
+.socials li a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -804,14 +806,14 @@ footer .copyright ul li a {
   border-radius: 50%;
   border: solid 1px rgba(0, 0, 0, 0.2);
 }
-footer .copyright ul li a svg {
+.socials li a svg {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
 }
-footer .copyright ul li a:hover {
+.socials li a:hover {
   background-color: #2bbef9 !important;
 }
-footer .copyright ul li a:hover svg {
+.socials li a:hover svg {
   color: #fff !important;
 }
 .productModal .MuiPaper-elevation {
@@ -1276,4 +1278,91 @@ a:hover {
   font-weight: 800 !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 15px;
+}
+/* SIGNIN */
+.signInPage {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.signInPage .shape-bottom {
+  position: absolute;
+  top: auto;
+  bottom: -6px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.signInPage::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(#1e3d81, #2334a3);
+  opacity: 0.9;
+  z-index: -1;
+}
+.border-effect {
+  position: relative;
+  color: #337ab7;
+  text-decoration: none;
+}
+.border-effect::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background-color: #102a44;
+  content: "";
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: -2s;
+  transition: 0.2s;
+}
+.border-effect:hover {
+  text-decoration: none;
+  color: #000;
+}
+.border-effect:hover::after {
+  width: 100%;
+}
+.signInPage .box {
+  width: 400px;
+  height: auto;
+  background: #fff;
+  margin: auto;
+  position: relative;
+  z-index: 100;
+  border-radius: 10px !important;
+}
+.signInPage .box h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.signInPage .box form {
+  padding: 20px 30px;
+}
+.signInPage .box .form-group {
+  margin-bottom: 15px;
+}
+.signInPage .box .txt {
+  font-size: 14px;
+  font-weight: bold;
+}
+.loginWithGoogle {
+  width: 100%;
+  font-weight: bold !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+.loginWithGoogle img {
+  width: 30px;
+  margin-right: 10px;
+}
+.signUpPage .box {
+  width: 500px;
 }
